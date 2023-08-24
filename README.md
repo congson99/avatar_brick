@@ -28,7 +28,7 @@ Widget simpleAvatarBrick() =>
     );
 ```
 
-**Note:** The image you pass in the image `variable can be any type of Image (`Image.network`
+**Note:** The image you pass in the image variable can be any type of Image (`Image.network`
 , `Image.asset`
 , `Image.file`, `Image.memory`). The passed Image should be have a `fit` `variable of `BoxFit.cover`
 , a `height` `variable of `double.maxFinite` and a `weight` `variable of `double.maxFinite`.
