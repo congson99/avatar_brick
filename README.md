@@ -83,8 +83,22 @@ You can customize the size of the avatar by passing the variable `size`. See the
 Widget resizeAvatarBrick() =>
     AvatarBrick(
       size: const Size(56, 56),
+      image: Image.network(
+        "https://www.waldenu.edu/media/5504/seo-2332-bs-glad-dark-skinned-woman-with-a-393146831-1200x675",
+        fit: BoxFit.cover,
+        height: double.maxFinite,
+        width: double.maxFinite,
+      ),
     );
 ```
+
+#### Customize colors for avatars without images
+
+<a href="https://github.com/congson99/avatar_brick"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_size.png?raw=true" alt="Icon" height="200"></a>
+
+#### Customize others
+
+<a href="https://github.com/congson99/avatar_brick"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_size.png?raw=true" alt="Icon" height="200"></a>
 
 # Contact me
 
