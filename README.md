@@ -46,7 +46,7 @@ If you want to create an avatar can **automatically display your abbreviation na
 example:
 
 ```dart
-Widget simpleAvatarBrick() =>
+Widget nameAvatarBrick() =>
     AvatarBrick
       (
       image: null,
@@ -54,6 +54,15 @@ Widget simpleAvatarBrick() =>
     );
 ```
 
-#### 2. Avatar with a "name"
+#### 3. Loading Avatar
 
 <a href="https://github.com/congson99/avatar_brick"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_loading.png?raw=true" alt="Icon" height="120"></a>
+
+If you want to create a loading avatar.DON'T pass any variable or pass the `true` value to
+the `isLoading` variable like the following example:
+
+```dart
+Widget simpleAvatarBrick() => AvatarBrick(isLoading: true);
+
+Widget nullAvatarBrick() => AvatarBrick();
+```
