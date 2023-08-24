@@ -16,7 +16,7 @@ import 'package:_avatar/_avatar.dart';
 Try the following simple example:
 
 ```dart
-Widget avatarBrick() =>
+Widget simpleAvatarBrick() =>
     AvatarBrick
       (
         image: Image.network(
@@ -28,7 +28,20 @@ Widget avatarBrick() =>
     );
 ```
 
-**Note:** The image you pass in the image parameter can be any type of Image (`Image.network`
+**Note:** The image you pass in the image `variable can be any type of Image (`Image.network`
 , `Image.asset`
-, `Image.file`, `Image.memory`). The passed Image should be have a `fit` param of `BoxFit.cover`,
-a `height` param of `double.maxFinite` and a `weight` param of `double.maxFinite`.
+, `Image.file`, `Image.memory`). The passed Image should be have a `fit` `variable of `BoxFit.cover`
+, a `height` `variable of `double.maxFinite` and a `weight` `variable of `double.maxFinite`.
+
+If you want to create an avatar can **automatically display your abbreviation name**. DON'T pass
+`image` variable or pass `null` value. Then pass your name in name variable like following example:
+
+```dart
+Widget simpleAvatarBrick() =>
+    AvatarBrick
+      (
+      image: null,
+      name: "Jennie Garth",
+    );
+```
+
