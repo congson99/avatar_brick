@@ -10,25 +10,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Example',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      debugShowCheckedModeBanner: false,
-      home: const MyHomePage(),
-    );
+    return const MaterialApp(home: DemoPage());
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+class DemoPage extends StatelessWidget {
+  const DemoPage({Key? key}) : super(key: key);
 
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,124 +28,67 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              /// -------------------------------
-              /// Create the avatar with an image
-              /// -------------------------------
-              const Text("1. Avatar with an image",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600)),
-              const SizedBox(height: 20),
-              Column(
+              const SizedBox(height: 24),
+              Row(
                 children: [
-                  AvatarBrick(
-                    image: Image.network(
-                      "https://images.healthshots.com/healthshots/en/uploads/2020/12/08182549/positive-person.jpg",
-                      fit: BoxFit.cover,
-                      height: double.maxFinite,
-                      width: double.maxFinite,
-                    ),
+                  Column(
+                    children: [
+                      /// -------------------------------
+                      /// Create the avatar with an image
+                      /// -------------------------------
+                      AvatarBrick(
+                        image: Image.network(
+                          "https://images.healthshots.com/healthshots/en/uploads/2020/12/08182549/positive-person.jpg",
+                          fit: BoxFit.cover,
+                          height: double.maxFinite,
+                          width: double.maxFinite,
+                        ),
+                      ),
+                      const SizedBox(height: 12),
+                      const Text(
+                        "Jennie Garth",
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.w600),
+                      )
+                    ],
                   ),
-                  const SizedBox(height: 12),
-                  const Text(
-                    "Jennie Garth",
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-                  )
+                  const SizedBox(width: 24),
+                  Column(
+                    children: [
+                      /// -----------------------------
+                      /// Create the avatar with a name
+                      /// -----------------------------
+                      AvatarBrick(
+                        name: "Jennie Garth",
+                        backgroundColor: Colors.blue,
+                        nameTextColor: Colors.white,
+                      ),
+                      const SizedBox(height: 12),
+                      const Text(
+                        "Jennie Garth",
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.w600),
+                      )
+                    ],
+                  ),
                 ],
               ),
-              const SizedBox(height: 40),
-
-              /// -----------------------------
-              /// Create the avatar with a name
-              /// -----------------------------
-              const Text("2. Avatar with a name",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600)),
-              const SizedBox(height: 20),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
-                    Column(
-                      children: [
-                        AvatarBrick(
-                          name: "Jennie Garth",
-                          backgroundColor: Colors.blue,
-                          nameTextColor: Colors.white,
-                        ),
-                        const SizedBox(height: 12),
-                        const Text(
-                          "Jennie Garth",
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.w600),
-                        )
-                      ],
-                    ),
-                    const SizedBox(width: 32),
-                    Column(
-                      children: [
-                        AvatarBrick(
-                          name: "Hồ Công Sơn",
-                          abbreviationLength: 3,
-                          nameTextStyle: const TextStyle(
-                              fontSize: 24, fontWeight: FontWeight.w600),
-                          backgroundColor: Colors.amberAccent,
-                          nameTextColor: Colors.orange.shade800,
-                        ),
-                        const SizedBox(height: 12),
-                        const Text(
-                          "Hồ Công Sơn",
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.w600),
-                        )
-                      ],
-                    ),
-                  ],
-                ),
+              const SizedBox(height: 56),
+              Row(
+                children: const [
+                  /// ----------------------------------------
+                  /// Create the avatar with the loading state
+                  /// ----------------------------------------
+                  AvatarBrick(backgroundColor: Colors.black26),
+                  SizedBox(width: 32),
+                  AvatarBrick(isLoading: true),
+                ],
               ),
-              const SizedBox(height: 40),
-
-              /// ----------------------------------------
-              /// Create the avatar with the loading state
-              /// ----------------------------------------
-              const Text("3. Avatar with the loading state",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600)),
-              const SizedBox(height: 20),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
-                    Column(
-                      children: const [
-                        AvatarBrick(backgroundColor: Colors.black26),
-                        SizedBox(height: 12),
-                        Text(
-                          "Jennie Garth",
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.w600),
-                        )
-                      ],
-                    ),
-                    const SizedBox(width: 32),
-                    Column(
-                      children: const [
-                        AvatarBrick(isLoading: true),
-                        SizedBox(height: 12),
-                        Text(
-                          "Jennie Garth",
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.w600),
-                        )
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 40),
+              const SizedBox(height: 56),
 
               /// --------------------
               /// Customize the avatar
               /// --------------------
-              const Text("4. Customize the avatar size",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600)),
-              const SizedBox(height: 20),
               Wrap(
                 crossAxisAlignment: WrapCrossAlignment.center,
                 spacing: 20,
@@ -201,10 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ],
               ),
-              const SizedBox(height: 40),
-              const Text("5. Customize others",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600)),
-              const SizedBox(height: 20),
+              const SizedBox(height: 56),
               Wrap(
                 crossAxisAlignment: WrapCrossAlignment.center,
                 spacing: 20,
