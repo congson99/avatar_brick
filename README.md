@@ -73,8 +73,5 @@ Widget nullAvatarBrick() => AvatarBrick();
 
 # Contact me
 
-[congson99vn@gmail.com](mailto:congson99vn@gmail.com)
-
-[in/congson](https://www.linkedin.com/in/congson/)
-
-[github.com/congson99](https://github.com/congson99)
+Email [congson99vn@gmail.com](mailto:congson99vn@gmail.com)
+| [linkedin](https://www.linkedin.com/in/congson/) | [github](https://github.com/congson99)
