@@ -73,7 +73,18 @@ Widget nullAvatarBrick() => AvatarBrick();
 
 # How to customize?
 
-#### Customize Avatar Size
+#### Customize the avatar size
+
+<a href="https://github.com/congson99/avatar_brick"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_sizeg.png?raw=true" alt="Icon" height="200"></a>
+
+You can customize the size of the avatar by passing the variable `size`. See the following example:
+
+```dart
+Widget resizeAvatarBrick() =>
+    AvatarBrick(
+      size: const Size(56, 56),
+    );
+```
 
 # Contact me
 

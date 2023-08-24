@@ -40,7 +40,10 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("1. Avatar with an Image",
+              /// -------------------------------
+              /// Create the avatar with an image
+              /// -------------------------------
+              const Text("1. Avatar with an image",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600)),
               const SizedBox(height: 20),
               Column(
@@ -61,6 +64,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
               const SizedBox(height: 40),
+
+              /// -----------------------------
+              /// Create the avatar with a name
+              /// -----------------------------
               const Text("2. Avatar with a name",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600)),
               const SizedBox(height: 20),
@@ -106,6 +113,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               const SizedBox(height: 40),
+
+              /// ----------------------------------------
+              /// Create the avatar with the loading state
+              /// ----------------------------------------
               const Text("3. Avatar with the loading state",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600)),
               const SizedBox(height: 20),
@@ -140,6 +151,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               const SizedBox(height: 40),
+
+              /// --------------------
+              /// Customize the avatar
+              /// --------------------
               const Text("4. Customize the avatar size",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600)),
               const SizedBox(height: 20),
