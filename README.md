@@ -13,11 +13,11 @@ Import the package in your project:
 import 'package:_avatar/_avatar.dart';
 ```
 
-Try it with a simple example. The image you pass in the image parameter can be any type of Image (
-'Image.network', 'Image.asset', 'Image.file', 'Image.memory').
-
-*Note:* The passed Image should be have a 'fit' param of 'BoxFit.cover', a 'height' param of '
-double.maxFinite' and a 'weight' param of 'double.maxFinite' as in the following example:
+Try it with the following simple example. The image you pass in the image parameter can be any type
+of Image (`Image.network`, `Image.asset`, `Image.file`, `Image.memory`). The passed Image should be
+have a `
+fit` param of `BoxFit.cover`, a `height` param of `
+double.maxFinite` and a `weight` param of `double.maxFinite` as in the following example:
 
 ```dart
 Widget avatarBrick() =>
