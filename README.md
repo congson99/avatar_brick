@@ -7,13 +7,13 @@ is available.
 
 ## Let's get started
 
-Import the package in your project:
+### Import the package in your project:
 
 ```dart
 import 'package:_avatar/_avatar.dart';
 ```
 
-Try the following simple example:
+#### Try the following simple example:
 
 ```dart
 Widget simpleAvatarBrick() =>
