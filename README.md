@@ -5,8 +5,6 @@ is available.
 
 <a href="https://github.com/congson99/avatar_brick"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_pub.png?raw=true" alt="Icon"></a>
 
-<a href="https://github.com/congson99/avatar_brick"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/ff.png?raw=true" alt="Icon"></a>
-
 # Let's get started
 
 [//]: # (Import the package in your project:)
