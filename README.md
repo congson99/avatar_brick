@@ -95,32 +95,38 @@ Widget resizeAvatarBrick() =>
 #### Customize colors for avatars without images
 
 <a href="https://github.com/congson99/avatar_brick"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_size.png?raw=true" alt="Icon" height="200"></a>
-You can customize the size of the avatar by passing the variable `size`. Try the following example:
+
+You can customize the color of the background, border, abbreviation name. Try the following example:
 
 ```dart
 Widget resizeAvatarBrick() =>
     AvatarBrick(
-      size: const Size(56, 56),
-      image: Image.network(
-        "https://www.waldenu.edu/media/5504/seo-2332-bs-glad-dark-skinned-woman-with-a-393146831-1200x675",
-        fit: BoxFit.cover,
-        height: double.maxFinite,
-        width: double.maxFinite,
-      ),
+      name: "Avatar Brick",
+      backgroundColor: Colors.white,
+      nameTextColor: Colors.teal,
+      border: Border.all(width: 4, color: Colors.teal),
     );
 ```
 
 #### Customize others
 
 <a href="https://github.com/congson99/avatar_brick"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_size.png?raw=true" alt="Icon" height="200"></a>
-You can customize the size of the avatar by passing the variable `size`. Try the following example:
+
+You can customize the radius, border, shadow,... of the image. Try the following example:
 
 ```dart
 Widget resizeAvatarBrick() =>
     AvatarBrick(
-      size: const Size(56, 56),
+      radius: 24,
+      boxShadows: const [
+        BoxShadow(
+            color: Colors.black54,
+            blurRadius: 8,
+            offset: Offset(2, 4))
+      ],
+      border: Border.all(width: 2, color: Colors.orange),
       image: Image.network(
-        "https://www.waldenu.edu/media/5504/seo-2332-bs-glad-dark-skinned-woman-with-a-393146831-1200x675",
+        "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
         fit: BoxFit.cover,
         height: double.maxFinite,
         width: double.maxFinite,
