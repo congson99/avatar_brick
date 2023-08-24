@@ -20,8 +20,6 @@ dev_dependencies:
 
 screenshots:
   - description: 'Example'
-    path: assets/screenshots/example.png
-  - description: 'State'
     path: assets/screenshots/example_pub.png
 
 topics:

@@ -70,3 +70,11 @@ Widget nullAvatarBrick() => AvatarBrick();
 # How to customize?
 
 #### Customize Avatar Size
+
+# Contact me
+
+[congson99vn@gmail.com](mailto:congson99vn@gmail.com)
+
+[in/congson](https://www.linkedin.com/in/congson/)
+
+[github.com/congson99](https://github.com/congson99)
