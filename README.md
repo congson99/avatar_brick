@@ -99,7 +99,7 @@ Widget resizeAvatarBrick() =>
 You can customize the color of the background, border, abbreviation name. Try the following example:
 
 ```dart
-Widget resizeAvatarBrick() =>
+Widget colorAvatarBrick() =>
     AvatarBrick(
       name: "Avatar Brick",
       backgroundColor: Colors.white,
@@ -115,7 +115,7 @@ Widget resizeAvatarBrick() =>
 You can customize the radius, border, shadow,... of the image. Try the following example:
 
 ```dart
-Widget resizeAvatarBrick() =>
+Widget otherAvatarBrick() =>
     AvatarBrick(
       radius: 24,
       boxShadows: const [
