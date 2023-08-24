@@ -66,3 +66,7 @@ Widget simpleAvatarBrick() => AvatarBrick(isLoading: true);
 
 Widget nullAvatarBrick() => AvatarBrick();
 ```
+
+# How to customize?
+
+#### Customize Avatar Size
