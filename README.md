@@ -28,6 +28,8 @@ Widget simpleAvatarBrick() =>
     );
 ```
 
+<a href="https://github.com/congson99/avatar_brick"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_image.png?raw=true" alt="Icon" width="120"></a>
+
 **Note:** The image you pass in the image variable can be any type of Image (`Image.network`
 , `Image.asset`, `Image.file`, `Image.memory`). The passed Image should be have a `fit` variable
 of `BoxFit.cover`, a `height` variable of `double.maxFinite` and a `weight` variable
@@ -45,6 +47,6 @@ Widget simpleAvatarBrick() =>
     );
 ```
 
-<a href="https://github.com/congson99/avatar_brick"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example.png?raw=true" alt="Icon" width="200"></a>
+<a href="https://github.com/congson99/avatar_brick"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_name.png?raw=true" alt="Icon" width="120"></a>
 
 
