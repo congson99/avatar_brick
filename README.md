@@ -15,7 +15,7 @@ import 'package:_avatar/_avatar.dart';
 
 #### 1. Avatar with an image
 
-<a href="https://github.com/congson99/avatar_brick"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_image.png?raw=true" alt="Icon" width="120"></a>
+<a href="https://github.com/congson99/avatar_brick"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_image.png?raw=true" alt="Icon" height="120"></a>
 
 Try the following simple example:
 
@@ -39,10 +39,11 @@ of `double.maxFinite`.
 
 #### 2. Avatar with a "name"
 
-<a href="https://github.com/congson99/avatar_brick"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_name.png?raw=true" alt="Icon" width="120"></a>
+<a href="https://github.com/congson99/avatar_brick"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_name.png?raw=true" alt="Icon" height="120"></a>
 
 If you want to create an avatar can **automatically display your abbreviation name**. DON'T pass
-`image` variable or pass `null` value. Then pass your name in name variable like following example:
+`image` variable or pass `null` value. Then pass your name in the `name` variable like following
+example:
 
 ```dart
 Widget simpleAvatarBrick() =>
@@ -53,3 +54,6 @@ Widget simpleAvatarBrick() =>
     );
 ```
 
+#### 2. Avatar with a "name"
+
+<a href="https://github.com/congson99/avatar_brick"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_loading.png?raw=true" alt="Icon" height="120"></a>
