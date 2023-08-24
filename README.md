@@ -7,11 +7,15 @@ is available.
 
 # Let's get started
 
-Import the package in your project:
+[//]: # (Import the package in your project:)
 
-```dart
-import 'package:_avatar/_avatar.dart';
-```
+[//]: # ()
+
+[//]: # (```dart)
+
+[//]: # (import 'package:_avatar/_avatar.dart';)
+
+[//]: # (```)
 
 #### 1. Avatar with an image
 
@@ -73,5 +77,5 @@ Widget nullAvatarBrick() => AvatarBrick();
 
 # Contact me
 
-Email [congson99vn@gmail.com](mailto:congson99vn@gmail.com)
+[congson99vn@gmail.com](mailto:congson99vn@gmail.com)
 | [linkedin](https://www.linkedin.com/in/congson/) | [github](https://github.com/congson99)
