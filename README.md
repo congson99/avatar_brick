@@ -7,13 +7,17 @@ is available.
 
 # Let's get started
 
-##### Import the package in your project:
+#### 1. Import
+
+Import the package in your project:
 
 ```dart
 import 'package:_avatar/_avatar.dart';
 ```
 
-#### Try the following simple example:
+#### Avatar with an image
+
+Try the following simple example:
 
 ```dart
 Widget simpleAvatarBrick() =>
@@ -34,6 +38,8 @@ Widget simpleAvatarBrick() =>
 , `Image.asset`, `Image.file`, `Image.memory`). The passed Image should be have a `fit` variable
 of `BoxFit.cover`, a `height` variable of `double.maxFinite` and a `weight` variable
 of `double.maxFinite`.
+
+#### Avatar with a "name"
 
 If you want to create an avatar can **automatically display your abbreviation name**. DON'T pass
 `image` variable or pass `null` value. Then pass your name in name variable like following example:
