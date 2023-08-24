@@ -75,7 +75,7 @@ Widget nullAvatarBrick() => AvatarBrick();
 
 #### Customize the avatar size
 
-<a href="https://github.com/congson99/avatar_brick"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_sizeg.png?raw=true" alt="Icon" height="200"></a>
+<a href="https://github.com/congson99/avatar_brick"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_size.png?raw=true" alt="Icon" height="200"></a>
 
 You can customize the size of the avatar by passing the variable `size`. See the following example:
 
