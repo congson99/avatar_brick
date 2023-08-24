@@ -191,7 +191,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
             ),
-            SizedBox(height: MediaQuery.of(context).padding.bottom + 32)
+            SizedBox(height: MediaQuery.of(context).padding.bottom + 32),
           ],
         ),
       ),
