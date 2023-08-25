@@ -6,15 +6,16 @@ class AvatarBrick extends StatelessWidget {
   const AvatarBrick({
     Key? key,
     this.image,
-    this.name,
     this.size,
-    this.backgroundColor,
-    this.abbreviationLength,
-    this.nameTextColor,
-    this.nameTextStyle,
     this.radius,
+    this.backgroundColor,
     this.border,
+    this.boxShadows,
     this.isLoading,
+    this.name,
+    this.nameTextStyle,
+    this.nameTextColor,
+    this.abbreviationLength,
   })  : assert(name == null ||
             ((backgroundColor == null) == (nameTextColor == null))),
         assert((backgroundColor == null || nameTextColor == null) ||
@@ -26,6 +27,7 @@ class AvatarBrick extends StatelessWidget {
   final Color? backgroundColor;
   final double? radius;
   final BoxBorder? border;
+  final List<BoxShadow>? boxShadows;
 
   /// State Params
   final bool? isLoading;
@@ -46,6 +48,7 @@ class AvatarBrick extends StatelessWidget {
           borderRadius: BorderRadius.circular(
               calculateBorderRadiusByAvatarSize(radius, size)),
           border: border,
+          boxShadow: boxShadows ?? [],
           color: border?.bottom.color),
       child: ClipRRect(
         borderRadius:

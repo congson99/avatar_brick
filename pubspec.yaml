@@ -1,8 +1,9 @@
 name: avatar_brick
 description: A Customized Avatar Widget.
-version: 0.1.0
-homepage: https://github.com/congson99
-repository: https://github.com/congson99
+version: 0.1.1
+homepage: https://github.com/congson99/avatar_brick
+repository: https://github.com/congson99/avatar_brick
+documentation: https://github.com/congson99/avatar_brick
 
 environment:
   sdk: '>=2.19.6 <3.0.0'
@@ -16,3 +17,13 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+
+screenshots:
+  - description: 'Example for Avatar Brick'
+    path: assets/screenshots/example_pub.png
+
+topics:
+  - avatar
+  - username
+  - abbreviation
+
