@@ -19,14 +19,11 @@ dev_dependencies:
   flutter_lints: ^2.0.0
 
 screenshots:
-  - description: 'Example'
+  - description: 'Example for Avatar Brick'
     path: assets/screenshots/example_pub.png
 
 topics:
   - avatar
-  - name
+  - user_name
   - abbreviation
-  - loading
-  - photo
-  - image
 
