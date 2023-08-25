@@ -73,7 +73,7 @@ Widget nullAvatarBrick() => AvatarBrick();
 
 # How to customize?
 
-#### Customize the avatar size
+### Customize the avatar size
 
 <a href="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_size.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_size.png?raw=true" alt="Icon"></a>
 
@@ -92,7 +92,7 @@ Widget resizeAvatarBrick() =>
     );
 ```
 
-#### Customize colors for avatars without images
+### Customize colors for avatars without images
 
 <a href="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_color.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_color.png?raw=true" alt="Icon" height="120"></a>
 
@@ -108,7 +108,7 @@ Widget colorAvatarBrick() =>
     );
 ```
 
-#### Customize others
+### Customize others
 
 <a href="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_size.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_size.png?raw=true" alt="Icon" height="200"></a>
 
