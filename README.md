@@ -118,7 +118,7 @@ Widget colorAvatarBrick() =>
 
 ### Customize others
 
-<a href="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_size.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_size.png?raw=true" alt="Icon" height="200"></a>
+<a href="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_others.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_others.png?raw=true" alt="Icon"></a>
 
 You can customize the radius, border, shadow,... of the image. Try the following example:
 
