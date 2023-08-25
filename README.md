@@ -76,14 +76,9 @@ You can customize the size of the avatar by passing the variable `size`. Try the
 
 ```dart
 Widget resizeAvatarBrick() =>
-    AvatarBrick(
-      size: const Size(56, 56),
-      image: Image.network(
-        "https://www.waldenu.edu/media/5504/seo-2332-bs-glad-dark-skinned-woman-with-a-393146831-1200x675",
-        fit: BoxFit.cover,
-        height: double.maxFinite,
-        width: double.maxFinite,
-      ),
+    AvatarBrick.network(
+      size: const Size(16, 16),
+      src: "https://www.waldenu.edu/media/5504/seo-2332-bs-glad-dark-skinned-woman-with-a-393146831-1200x675",
     );
 ```
 
@@ -111,7 +106,7 @@ You can customize the radius, border, shadow,... of the image. Try the following
 
 ```dart
 Widget otherAvatarBrick() =>
-    AvatarBrick(
+    AvatarBrick.network(
       radius: 24,
       boxShadows: const [
         BoxShadow(
@@ -120,12 +115,7 @@ Widget otherAvatarBrick() =>
             offset: Offset(2, 4))
       ],
       border: Border.all(width: 2, color: Colors.orange),
-      image: Image.network(
-        "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
-        fit: BoxFit.cover,
-        height: double.maxFinite,
-        width: double.maxFinite,
-      ),
+      src: "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
     );
 ```
 
