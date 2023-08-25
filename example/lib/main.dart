@@ -26,10 +26,11 @@ class DemoPage extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(24.0),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const SizedBox(height: 24),
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Column(
                     children: [
@@ -74,79 +75,16 @@ class DemoPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 56),
-              Row(
-                children: const [
-                  /// ----------------------------------------
-                  /// Create the avatar with the loading state
-                  /// ----------------------------------------
-                  AvatarBrick(backgroundColor: Colors.black26),
-                  SizedBox(width: 32),
-                  AvatarBrick(isLoading: true),
-                ],
-              ),
-              const SizedBox(height: 56),
 
               /// --------------------
               /// Customize the avatar
               /// --------------------
               Wrap(
                 crossAxisAlignment: WrapCrossAlignment.center,
-                spacing: 20,
-                runSpacing: 20,
+                alignment: WrapAlignment.center,
+                spacing: 24,
+                runSpacing: 24,
                 children: [
-                  AvatarBrick(
-                    size: const Size(120, 120),
-                    image: Image.network(
-                      "https://www.waldenu.edu/media/5504/seo-2332-bs-glad-dark-skinned-woman-with-a-393146831-1200x675",
-                      fit: BoxFit.cover,
-                      height: double.maxFinite,
-                      width: double.maxFinite,
-                    ),
-                  ),
-                  AvatarBrick(
-                    size: const Size(80, 80),
-                    image: Image.network(
-                      "https://www.waldenu.edu/media/5504/seo-2332-bs-glad-dark-skinned-woman-with-a-393146831-1200x675",
-                      fit: BoxFit.cover,
-                      height: double.maxFinite,
-                      width: double.maxFinite,
-                    ),
-                  ),
-                  AvatarBrick(
-                    size: const Size(32, 32),
-                    image: Image.network(
-                      "https://www.waldenu.edu/media/5504/seo-2332-bs-glad-dark-skinned-woman-with-a-393146831-1200x675",
-                      fit: BoxFit.cover,
-                      height: double.maxFinite,
-                      width: double.maxFinite,
-                    ),
-                  ),
-                  AvatarBrick(
-                    size: const Size(16, 16),
-                    image: Image.network(
-                      "https://www.waldenu.edu/media/5504/seo-2332-bs-glad-dark-skinned-woman-with-a-393146831-1200x675",
-                      fit: BoxFit.cover,
-                      height: double.maxFinite,
-                      width: double.maxFinite,
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 56),
-              Wrap(
-                crossAxisAlignment: WrapCrossAlignment.center,
-                spacing: 20,
-                runSpacing: 20,
-                children: [
-                  AvatarBrick(
-                    radius: 0,
-                    image: Image.network(
-                      "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
-                      fit: BoxFit.cover,
-                      height: double.maxFinite,
-                      width: double.maxFinite,
-                    ),
-                  ),
                   AvatarBrick(
                     radius: 12,
                     image: Image.network(
@@ -166,7 +104,15 @@ class DemoPage extends StatelessWidget {
                     ),
                   ),
                   AvatarBrick(
-                    radius: 0,
+                    image: Image.network(
+                      "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
+                      fit: BoxFit.cover,
+                      height: double.maxFinite,
+                      width: double.maxFinite,
+                    ),
+                  ),
+                  AvatarBrick(
+                    radius: 12,
                     border: Border.all(width: 2, color: Colors.indigo),
                     image: Image.network(
                       "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
@@ -176,7 +122,6 @@ class DemoPage extends StatelessWidget {
                     ),
                   ),
                   AvatarBrick(
-                    radius: 24,
                     border: Border.all(width: 6, color: Colors.orange),
                     image: Image.network(
                       "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
@@ -184,12 +129,6 @@ class DemoPage extends StatelessWidget {
                       height: double.maxFinite,
                       width: double.maxFinite,
                     ),
-                  ),
-                  AvatarBrick(
-                    name: "Avatar Brick",
-                    backgroundColor: Colors.white,
-                    nameTextColor: Colors.teal,
-                    border: Border.all(width: 4, color: Colors.teal),
                   ),
                   AvatarBrick(
                     radius: 12,
@@ -209,9 +148,9 @@ class DemoPage extends StatelessWidget {
                   AvatarBrick(
                     boxShadows: const [
                       BoxShadow(
-                        color: Colors.lightBlue,
-                        blurRadius: 16,
-                      )
+                          color: Colors.blueAccent,
+                          blurRadius: 4,
+                          spreadRadius: 2)
                     ],
                     image: Image.network(
                       "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
@@ -220,16 +159,32 @@ class DemoPage extends StatelessWidget {
                       width: double.maxFinite,
                     ),
                   ),
+                  const AvatarBrick(
+                    name: "Avatar Brick",
+                  ),
+                  AvatarBrick(
+                    name: "Avatar Brick",
+                    backgroundColor: Colors.white,
+                    nameTextColor: Colors.teal,
+                    border: Border.all(width: 4, color: Colors.teal),
+                  ),
                   AvatarBrick(
                     name: "Avatar Brick",
                     backgroundColor: Colors.cyanAccent,
                     nameTextColor: Colors.indigo,
-                    boxShadows: [
+                    boxShadows: const [
                       BoxShadow(
-                          color: Colors.indigo.shade200,
-                          blurRadius: 8,
-                          offset: const Offset(0, 2))
+                        color: Colors.indigo,
+                        blurRadius: 4,
+                        spreadRadius: 1,
+                      )
                     ],
+                  ),
+                  const AvatarBrick(
+                    backgroundColor: Colors.black26,
+                  ),
+                  const AvatarBrick(
+                    isLoading: true,
                   ),
                 ],
               ),
