@@ -100,6 +100,7 @@ class AvatarBrick extends StatelessWidget {
   /// -------------------
   static AvatarBrick network({
     String? src,
+    bool? alwaysRefreshSrc,
     Size? size,
     double? radius,
     Color? backgroundColor,
@@ -117,7 +118,10 @@ class AvatarBrick extends StatelessWidget {
   }) {
     final Image? image = src != null
         ? Image.network(
-            src,
+            src +
+                (alwaysRefreshSrc == true
+                    ? "?${DateTime.now().millisecondsSinceEpoch}"
+                    : ""),
             height: size?.height ?? defaultHeight,
             width: size?.width ?? defaultWeight,
             scale: scale ?? 1,
