@@ -99,7 +99,8 @@ class AvatarBrick extends StatelessWidget {
   /// Special input image
   /// -------------------
   static AvatarBrick network({
-    required String src,
+    String? src,
+    bool? alwaysRefreshSrc,
     Size? size,
     double? radius,
     Color? backgroundColor,
@@ -115,14 +116,19 @@ class AvatarBrick extends StatelessWidget {
     BoxFit? fit,
     AlignmentGeometry? alignment,
   }) {
-    final Image image = Image.network(
-      src,
-      height: size?.height ?? defaultHeight,
-      width: size?.width ?? defaultWeight,
-      scale: scale ?? 1,
-      fit: fit ?? BoxFit.cover,
-      alignment: alignment ?? Alignment.center,
-    );
+    final Image? image = src != null
+        ? Image.network(
+            src +
+                (alwaysRefreshSrc == true
+                    ? "?${DateTime.now().millisecondsSinceEpoch}"
+                    : ""),
+            height: size?.height ?? defaultHeight,
+            width: size?.width ?? defaultWeight,
+            scale: scale ?? 1,
+            fit: fit ?? BoxFit.cover,
+            alignment: alignment ?? Alignment.center,
+          )
+        : null;
     return AvatarBrick(
       image: image,
       size: size,
@@ -139,7 +145,7 @@ class AvatarBrick extends StatelessWidget {
   }
 
   static AvatarBrick asset({
-    required String src,
+    String? src,
     Size? size,
     double? radius,
     Color? backgroundColor,
@@ -155,14 +161,16 @@ class AvatarBrick extends StatelessWidget {
     BoxFit? fit,
     AlignmentGeometry? alignment,
   }) {
-    final Image image = Image.asset(
-      src,
-      height: size?.height ?? defaultHeight,
-      width: size?.width ?? defaultWeight,
-      scale: scale ?? 1,
-      fit: fit ?? BoxFit.cover,
-      alignment: alignment ?? Alignment.center,
-    );
+    final Image? image = src != null
+        ? Image.asset(
+            src,
+            height: size?.height ?? defaultHeight,
+            width: size?.width ?? defaultWeight,
+            scale: scale ?? 1,
+            fit: fit ?? BoxFit.cover,
+            alignment: alignment ?? Alignment.center,
+          )
+        : null;
     return AvatarBrick(
       image: image,
       size: size,
@@ -179,7 +187,7 @@ class AvatarBrick extends StatelessWidget {
   }
 
   static AvatarBrick file({
-    required File src,
+    File? src,
     Size? size,
     double? radius,
     Color? backgroundColor,
@@ -195,14 +203,16 @@ class AvatarBrick extends StatelessWidget {
     BoxFit? fit,
     AlignmentGeometry? alignment,
   }) {
-    final Image image = Image.file(
-      src,
-      height: size?.height ?? defaultHeight,
-      width: size?.width ?? defaultWeight,
-      scale: scale ?? 1,
-      fit: fit ?? BoxFit.cover,
-      alignment: alignment ?? Alignment.center,
-    );
+    final Image? image = src != null
+        ? Image.file(
+            src,
+            height: size?.height ?? defaultHeight,
+            width: size?.width ?? defaultWeight,
+            scale: scale ?? 1,
+            fit: fit ?? BoxFit.cover,
+            alignment: alignment ?? Alignment.center,
+          )
+        : null;
     return AvatarBrick(
       image: image,
       size: size,
@@ -219,7 +229,7 @@ class AvatarBrick extends StatelessWidget {
   }
 
   static AvatarBrick memory({
-    required Uint8List src,
+    Uint8List? src,
     Size? size,
     double? radius,
     Color? backgroundColor,
@@ -235,14 +245,16 @@ class AvatarBrick extends StatelessWidget {
     BoxFit? fit,
     AlignmentGeometry? alignment,
   }) {
-    final Image image = Image.memory(
-      src,
-      height: size?.height ?? defaultHeight,
-      width: size?.width ?? defaultWeight,
-      scale: scale ?? 1,
-      fit: fit ?? BoxFit.cover,
-      alignment: alignment ?? Alignment.center,
-    );
+    final Image? image = src != null
+        ? Image.memory(
+            src,
+            height: size?.height ?? defaultHeight,
+            width: size?.width ?? defaultWeight,
+            scale: scale ?? 1,
+            fit: fit ?? BoxFit.cover,
+            alignment: alignment ?? Alignment.center,
+          )
+        : null;
     return AvatarBrick(
       image: image,
       size: size,
