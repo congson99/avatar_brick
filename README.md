@@ -148,5 +148,5 @@ Widget otherAvatarBrick() =>
 
 See more of my packages [here](https://github.com/congson99/flutter_bricks)
 
-[congson99vn@gmail.com](mailto:congson99vn@gmail.com)
+Contact me: [congson99vn@gmail.com](mailto:congson99vn@gmail.com)
 | [linkedin](https://www.linkedin.com/in/congson/) | [github](https://github.com/congson99)
