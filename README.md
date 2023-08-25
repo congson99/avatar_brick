@@ -31,7 +31,7 @@ Widget simpleAvatarBrick() =>
     );
 ```
 
-**Note:** I you pass an image to the image variable, it should be have a `fit` variable
+**Note:** If you pass an image to the image variable, it should be have a `fit` variable
 of `BoxFit.cover`, a `height` variable of `double.maxFinite` and a `weight` variable
 of `double.maxFinite`.
 
