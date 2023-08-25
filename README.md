@@ -5,7 +5,6 @@ is available.
 
 <a href="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_pub.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_pub.png?raw=true" alt="Icon"></a>
 <br />
-<br />
 
 # Let's get started
 
@@ -41,6 +40,7 @@ Widget simpleAvatarBrick() =>
 , `Image.asset`, `Image.file`, `Image.memory`). The passed Image should be have a `fit` variable
 of `BoxFit.cover`, a `height` variable of `double.maxFinite` and a `weight` variable
 of `double.maxFinite`.
+<br />
 
 ### 2. Avatar with a "name"
 
@@ -58,6 +58,8 @@ Widget nameAvatarBrick() =>
     );
 ```
 
+<br />
+
 ### 3. Loading Avatar
 
 <a href="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_loading.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_loading.png?raw=true" alt="Icon" height="120"></a>
@@ -70,6 +72,8 @@ Widget simpleAvatarBrick() => AvatarBrick(isLoading: true);
 
 Widget nullAvatarBrick() => AvatarBrick();
 ```
+
+<br />
 
 # How to customize?
 
@@ -92,6 +96,8 @@ Widget resizeAvatarBrick() =>
     );
 ```
 
+<br />
+
 ### Customize colors for avatars without images
 
 <a href="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_color.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_color.png?raw=true" alt="Icon" height="120"></a>
@@ -107,6 +113,8 @@ Widget colorAvatarBrick() =>
       border: Border.all(width: 4, color: Colors.teal),
     );
 ```
+
+<br />
 
 ### Customize others
 
@@ -133,6 +141,8 @@ Widget otherAvatarBrick() =>
       ),
     );
 ```
+
+<br />
 
 # Contact me
 
