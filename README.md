@@ -17,7 +17,7 @@ is available.
 
 [//]: # (```)
 
-#### 1. Avatar with an image
+### 1. Avatar with an image
 
 <a href="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_image.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_image.png?raw=true" alt="Icon" height="120"></a>
 
@@ -41,7 +41,7 @@ Widget simpleAvatarBrick() =>
 of `BoxFit.cover`, a `height` variable of `double.maxFinite` and a `weight` variable
 of `double.maxFinite`.
 
-#### 2. Avatar with a "name"
+### 2. Avatar with a "name"
 
 <a href="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_name.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_name.png?raw=true" alt="Icon" height="120"></a>
 
@@ -58,7 +58,7 @@ Widget nameAvatarBrick() =>
     );
 ```
 
-#### 3. Loading Avatar
+### 3. Loading Avatar
 
 <a href="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_loading.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_loading.png?raw=true" alt="Icon" height="120"></a>
 
