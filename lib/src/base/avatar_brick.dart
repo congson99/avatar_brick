@@ -1,3 +1,6 @@
+import 'dart:io';
+import 'dart:typed_data';
+
 import 'package:avatar_brick/src/base/constant.dart';
 import 'package:avatar_brick/src/base/helper.dart';
 import 'package:flutter/cupertino.dart';
@@ -9,6 +12,7 @@ class AvatarBrick extends StatelessWidget {
     this.size,
     this.radius,
     this.backgroundColor,
+    this.imageBackgroundColor,
     this.border,
     this.boxShadows,
     this.isLoading,
@@ -34,6 +38,7 @@ class AvatarBrick extends StatelessWidget {
 
   /// Image Params
   final Image? image;
+  final Color? imageBackgroundColor;
 
   /// Name Params
   final String? name;
@@ -59,7 +64,9 @@ class AvatarBrick extends StatelessWidget {
             alignment: Alignment.center,
             height: size?.height ?? defaultHeight,
             width: size?.width ?? defaultWeight,
-            color: backgroundColor ?? defaultBackgroundColor,
+            color: (image != null)
+                ? (imageBackgroundColor ?? defaultImageBackgroundColor)
+                : (backgroundColor ?? defaultBackgroundColor),
             child: buildAvatar(),
           ),
         ),
@@ -86,5 +93,168 @@ class AvatarBrick extends StatelessWidget {
       );
     }
     return const SizedBox.shrink();
+  }
+
+  /// -------------------
+  /// Special input image
+  /// -------------------
+  static AvatarBrick network({
+    required String src,
+    Size? size,
+    double? radius,
+    Color? backgroundColor,
+    Color? imageBackgroundColor,
+    BoxBorder? border,
+    List<BoxShadow>? boxShadows,
+    bool? isLoading,
+    String? name,
+    int? abbreviationLength,
+    Color? nameTextColor,
+    TextStyle? nameTextStyle,
+    double? scale,
+    BoxFit? fit,
+    AlignmentGeometry? alignment,
+  }) {
+    final Image image = Image.network(
+      src,
+      height: size?.height ?? defaultHeight,
+      width: size?.width ?? defaultWeight,
+      scale: scale ?? 1,
+      fit: fit ?? BoxFit.cover,
+      alignment: alignment ?? Alignment.center,
+    );
+    return AvatarBrick(
+      image: image,
+      size: size,
+      radius: radius,
+      backgroundColor: backgroundColor,
+      imageBackgroundColor: imageBackgroundColor,
+      border: border,
+      boxShadows: boxShadows,
+      isLoading: isLoading,
+      name: name,
+      nameTextColor: nameTextColor,
+      nameTextStyle: nameTextStyle,
+    );
+  }
+
+  static AvatarBrick asset({
+    required String src,
+    Size? size,
+    double? radius,
+    Color? backgroundColor,
+    Color? imageBackgroundColor,
+    BoxBorder? border,
+    List<BoxShadow>? boxShadows,
+    bool? isLoading,
+    String? name,
+    int? abbreviationLength,
+    Color? nameTextColor,
+    TextStyle? nameTextStyle,
+    double? scale,
+    BoxFit? fit,
+    AlignmentGeometry? alignment,
+  }) {
+    final Image image = Image.asset(
+      src,
+      height: size?.height ?? defaultHeight,
+      width: size?.width ?? defaultWeight,
+      scale: scale ?? 1,
+      fit: fit ?? BoxFit.cover,
+      alignment: alignment ?? Alignment.center,
+    );
+    return AvatarBrick(
+      image: image,
+      size: size,
+      radius: radius,
+      backgroundColor: backgroundColor,
+      imageBackgroundColor: imageBackgroundColor,
+      border: border,
+      boxShadows: boxShadows,
+      isLoading: isLoading,
+      name: name,
+      nameTextColor: nameTextColor,
+      nameTextStyle: nameTextStyle,
+    );
+  }
+
+  static AvatarBrick file({
+    required File src,
+    Size? size,
+    double? radius,
+    Color? backgroundColor,
+    Color? imageBackgroundColor,
+    BoxBorder? border,
+    List<BoxShadow>? boxShadows,
+    bool? isLoading,
+    String? name,
+    int? abbreviationLength,
+    Color? nameTextColor,
+    TextStyle? nameTextStyle,
+    double? scale,
+    BoxFit? fit,
+    AlignmentGeometry? alignment,
+  }) {
+    final Image image = Image.file(
+      src,
+      height: size?.height ?? defaultHeight,
+      width: size?.width ?? defaultWeight,
+      scale: scale ?? 1,
+      fit: fit ?? BoxFit.cover,
+      alignment: alignment ?? Alignment.center,
+    );
+    return AvatarBrick(
+      image: image,
+      size: size,
+      radius: radius,
+      backgroundColor: backgroundColor,
+      imageBackgroundColor: imageBackgroundColor,
+      border: border,
+      boxShadows: boxShadows,
+      isLoading: isLoading,
+      name: name,
+      nameTextColor: nameTextColor,
+      nameTextStyle: nameTextStyle,
+    );
+  }
+
+  static AvatarBrick memory({
+    required Uint8List src,
+    Size? size,
+    double? radius,
+    Color? backgroundColor,
+    Color? imageBackgroundColor,
+    BoxBorder? border,
+    List<BoxShadow>? boxShadows,
+    bool? isLoading,
+    String? name,
+    int? abbreviationLength,
+    Color? nameTextColor,
+    TextStyle? nameTextStyle,
+    double? scale,
+    BoxFit? fit,
+    AlignmentGeometry? alignment,
+  }) {
+    final Image image = Image.memory(
+      src,
+      height: size?.height ?? defaultHeight,
+      width: size?.width ?? defaultWeight,
+      scale: scale ?? 1,
+      fit: fit ?? BoxFit.cover,
+      alignment: alignment ?? Alignment.center,
+    );
+    return AvatarBrick(
+      image: image,
+      size: size,
+      radius: radius,
+      backgroundColor: backgroundColor,
+      imageBackgroundColor: imageBackgroundColor,
+      border: border,
+      boxShadows: boxShadows,
+      isLoading: isLoading,
+      name: name,
+      nameTextColor: nameTextColor,
+      nameTextStyle: nameTextStyle,
+    );
   }
 }

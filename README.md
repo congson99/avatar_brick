@@ -1,4 +1,4 @@
-pub.dev: [https://pub.dev/packages/avatar_brick](https://pub.dev/packages/avatar_brick)
+[//]: # (pub.dev: [https://pub.dev/packages/avatar_brick]&#40;https://pub.dev/packages/avatar_brick&#41;)
 
 # Avatar Brick
 
@@ -16,21 +16,18 @@ Import the package in your project:
 import 'package:avatar_brick/avatar_brick.dart';
 ```
 
-### 1. Avatar with an image
+## 1. Avatar with an image
 
 <a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_image.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_image.png?raw=true" alt="Icon" height="120"></a>
 
-Try the following simple example:
+To pass an image to an AvatarBrick, you can either pass an image to the image variable or use
+specific image formats (`AvatarBrick.network`, `AvatarBrick.asset`, `AvatarBrick.file`
+, `AvatarBrick.memory`). Try the following simple example:
 
 ```dart
 Widget simpleAvatarBrick() =>
-    AvatarBrick(
-        image: Image.network(
-          "https: //images.healthshots.com/healthshots/en/uploads/2020/12/08182549/positive-person.jpg",
-          fit: BoxFit.cover,
-          height: double.maxFinite,
-          width: double.maxFinite,
-        )
+    AvatarBrick.network(
+      src: "https://images.healthshots.com/healthshots/en/uploads/2020/12/08182549/positive-person.jpg",
     );
 ```
 
@@ -40,7 +37,7 @@ of `BoxFit.cover`, a `height` variable of `double.maxFinite` and a `weight` vari
 of `double.maxFinite`.
 <br />
 
-### 2. Avatar with a "name"
+## 2. Avatar with a "name"
 
 <a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_name.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_name.png?raw=true" alt="Icon" height="120"></a>
 
@@ -58,7 +55,7 @@ Widget nameAvatarBrick() =>
 
 <br />
 
-### 3. Loading Avatar
+## 3. Loading Avatar
 
 <a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_loading.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_loading.png?raw=true" alt="Icon" height="120"></a>
 
@@ -73,11 +70,7 @@ Widget nullAvatarBrick() => AvatarBrick();
 
 <br />
 
-# How to customize?
-
-### Customize the avatar size
-
-<a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_size.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_size.png?raw=true" alt="Icon"></a>
+# Customization
 
 You can customize the size of the avatar by passing the variable `size`. Try the following example:
 
@@ -94,11 +87,9 @@ Widget resizeAvatarBrick() =>
     );
 ```
 
+<a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_size.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_size.png?raw=true" alt="Icon"></a>
+
 <br />
-
-### Customize colors for avatars without images
-
-<a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_color.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_color.png?raw=true" alt="Icon" height="120"></a>
 
 You can customize the color of the background, border, abbreviation name. Try the following example:
 
@@ -112,11 +103,9 @@ Widget colorAvatarBrick() =>
     );
 ```
 
+<a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_color.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_color.png?raw=true" alt="Icon" height="120"></a>
+
 <br />
-
-### Customize others
-
-<a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_others.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_others.png?raw=true" alt="Icon"></a>
 
 You can customize the radius, border, shadow,... of the image. Try the following example:
 
@@ -139,6 +128,8 @@ Widget otherAvatarBrick() =>
       ),
     );
 ```
+
+<a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_others.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_others.png?raw=true" alt="Icon"></a>
 
 <br />
 
