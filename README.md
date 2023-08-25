@@ -1,4 +1,4 @@
-[//]: # (pub.dev: [https://pub.dev/packages/avatar_brick]&#40;https://pub.dev/packages/avatar_brick&#41;)
+pub.dev: [https://pub.dev/packages/avatar_brick](https://pub.dev/packages/avatar_brick)
 
 # Avatar Brick
 
