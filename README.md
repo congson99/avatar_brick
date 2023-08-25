@@ -4,6 +4,7 @@ Avatar Brick is a custom avatar can **automatically display your abbreviation na
 is available.
 
 <a href="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_pub.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_pub.png?raw=true" alt="Icon"></a>
+\\ \\ \\
 
 # Let's get started
 
@@ -25,8 +26,7 @@ Try the following simple example:
 
 ```dart
 Widget simpleAvatarBrick() =>
-    AvatarBrick
-      (
+    AvatarBrick(
         image: Image.network(
           "https: //images.healthshots.com/healthshots/en/uploads/2020/12/08182549/positive-person.jpg",
           fit: BoxFit.cover,
@@ -51,8 +51,7 @@ example:
 
 ```dart
 Widget nameAvatarBrick() =>
-    AvatarBrick
-      (
+    AvatarBrick(
       image: null,
       name: "Jennie Garth",
     );
