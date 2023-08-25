@@ -94,7 +94,7 @@ Widget resizeAvatarBrick() =>
 
 #### Customize colors for avatars without images
 
-<a href="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_size.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_size.png?raw=true" alt="Icon" height="200"></a>
+<a href="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_color.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_color.png?raw=true" alt="Icon" height="120"></a>
 
 You can customize the color of the background, border, abbreviation name. Try the following example:
 
