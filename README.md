@@ -1,3 +1,5 @@
+pub.dev: [https://pub.dev/packages/avatar_brick](https://pub.dev/packages/avatar_brick)
+
 # Avatar Brick
 
 Avatar Brick is a custom avatar can **automatically display your abbreviation name** when no avatar
@@ -141,8 +143,6 @@ Widget otherAvatarBrick() =>
 <br />
 
 # Thank you for using my package!
-
-pub.dev: [https://pub.dev/packages/avatar_brick](https://pub.dev/packages/avatar_brick)
 
 See more of my packages [here](https://github.com/congson99/flutter_bricks)
 

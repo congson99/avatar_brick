@@ -1,7 +1,3 @@
-## 0.1.1
+## 0.1.x
 
-* Update README.
-
-## 0.1.0
-
-* Initial development release.
+* Development releases.

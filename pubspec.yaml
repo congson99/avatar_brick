@@ -1,6 +1,6 @@
 name: avatar_brick
-description: A Customized Avatar Widget.
-version: 0.1.1
+description: Avatar Brick is a custom avatar can automatically display your abbreviation name when no avatar is available.
+version: 0.1.3
 homepage: https://github.com/congson99/avatar_brick
 repository: https://github.com/congson99/avatar_brick
 documentation: https://github.com/congson99/avatar_brick
@@ -19,8 +19,8 @@ dev_dependencies:
   flutter_lints: ^2.0.0
 
 screenshots:
-  - description: 'Example for Avatar Brick'
-    path: assets/screenshots/example_pub.png
+  - description: 'Brick Logo - My customized package library'
+    path: assets/screenshots/brick_logo.png
 
 topics:
   - avatar
