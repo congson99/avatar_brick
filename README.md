@@ -16,17 +16,30 @@ Import the package in your project:
 import 'package:avatar_brick/avatar_brick.dart';
 ```
 
-### 1. Avatar with an image
+## 1. Avatar with an image
 
 <a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_image.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_image.png?raw=true" alt="Icon" height="120"></a>
 
-Try the following simple example:
+To pass an image to an AvatarBrick, you can either pass an image to the image variable or use
+specific image formats (`AvatarBrick.network`, `AvatarBrick.asset`, `AvatarBrick.file`
+, `AvatarBrick.memory`). Try the following simple example:
+
+```dart
+Widget simpleAvatarBrick() =>
+    AvatarBrick.network(
+      src: "https://images.healthshots.com/healthshots/en/uploads/2020/12/08182549/positive-person.jpg",
+    );
+```
+
+**Note:** I you pass an image to the image variable, it should be have a `fit` variable
+of `BoxFit.cover`, a `height` variable of `double.maxFinite` and a `weight` variable
+of `double.maxFinite`.
 
 ```dart
 Widget simpleAvatarBrick() =>
     AvatarBrick(
         image: Image.network(
-          "https: //images.healthshots.com/healthshots/en/uploads/2020/12/08182549/positive-person.jpg",
+          "https://images.healthshots.com/healthshots/en/uploads/2020/12/08182549/positive-person.jpg",
           fit: BoxFit.cover,
           height: double.maxFinite,
           width: double.maxFinite,
@@ -34,13 +47,9 @@ Widget simpleAvatarBrick() =>
     );
 ```
 
-**Note:** The image you pass in the image variable can be any type of Image (`Image.network`
-, `Image.asset`, `Image.file`, `Image.memory`). The passed Image should be have a `fit` variable
-of `BoxFit.cover`, a `height` variable of `double.maxFinite` and a `weight` variable
-of `double.maxFinite`.
 <br />
 
-### 2. Avatar with a "name"
+## 2. Avatar with a "name"
 
 <a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_name.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_name.png?raw=true" alt="Icon" height="120"></a>
 
@@ -58,7 +67,7 @@ Widget nameAvatarBrick() =>
 
 <br />
 
-### 3. Loading Avatar
+## 3. Loading Avatar
 
 <a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_loading.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_loading.png?raw=true" alt="Icon" height="120"></a>
 
@@ -73,56 +82,43 @@ Widget nullAvatarBrick() => AvatarBrick();
 
 <br />
 
-# How to customize?
-
-### Customize the avatar size
-
-<a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_size.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_size.png?raw=true" alt="Icon"></a>
+# Customization
 
 You can customize the size of the avatar by passing the variable `size`. Try the following example:
 
 ```dart
 Widget resizeAvatarBrick() =>
-    AvatarBrick(
-      size: const Size(56, 56),
-      image: Image.network(
-        "https://www.waldenu.edu/media/5504/seo-2332-bs-glad-dark-skinned-woman-with-a-393146831-1200x675",
-        fit: BoxFit.cover,
-        height: double.maxFinite,
-        width: double.maxFinite,
-      ),
+    AvatarBrick.network(
+      size: const Size(16, 16),
+      src: "https://www.waldenu.edu/media/5504/seo-2332-bs-glad-dark-skinned-woman-with-a-393146831-1200x675",
     );
 ```
 
+<a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_size.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_size.png?raw=true" alt="Icon"></a>
+
 <br />
-
-### Customize colors for avatars without images
-
-<a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_color.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_color.png?raw=true" alt="Icon" height="120"></a>
 
 You can customize the color of the background, border, abbreviation name. Try the following example:
 
 ```dart
 Widget colorAvatarBrick() =>
     AvatarBrick(
-      name: "Avatar Brick",
+      name: "Jennie Garth",
       backgroundColor: Colors.white,
       nameTextColor: Colors.teal,
       border: Border.all(width: 4, color: Colors.teal),
     );
 ```
 
+<a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_color.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_color.png?raw=true" alt="Icon" height="120"></a>
+
 <br />
-
-### Customize others
-
-<a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_others.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_others.png?raw=true" alt="Icon"></a>
 
 You can customize the radius, border, shadow,... of the image. Try the following example:
 
 ```dart
 Widget otherAvatarBrick() =>
-    AvatarBrick(
+    AvatarBrick.network(
       radius: 24,
       boxShadows: const [
         BoxShadow(
@@ -131,14 +127,11 @@ Widget otherAvatarBrick() =>
             offset: Offset(2, 4))
       ],
       border: Border.all(width: 2, color: Colors.orange),
-      image: Image.network(
-        "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
-        fit: BoxFit.cover,
-        height: double.maxFinite,
-        width: double.maxFinite,
-      ),
+      src: "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
     );
 ```
+
+<a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_others.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_others.png?raw=true" alt="Icon"></a>
 
 <br />
 

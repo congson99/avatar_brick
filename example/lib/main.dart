@@ -37,14 +37,9 @@ class DemoPage extends StatelessWidget {
                       /// -------------------------------
                       /// Create the avatar with an image
                       /// -------------------------------
-                      AvatarBrick(
-                        image: Image.network(
-                          "https://images.healthshots.com/healthshots/en/uploads/2020/12/08182549/positive-person.jpg",
-                          fit: BoxFit.cover,
-                          height: double.maxFinite,
-                          width: double.maxFinite,
-                        ),
-                      ),
+                      AvatarBrick.network(
+                          src:
+                              "https://images.healthshots.com/healthshots/en/uploads/2020/12/08182549/positive-person.jpg"),
                       const SizedBox(height: 12),
                       const Text(
                         "Jennie Garth",
@@ -85,52 +80,32 @@ class DemoPage extends StatelessWidget {
                 spacing: 24,
                 runSpacing: 24,
                 children: [
-                  AvatarBrick(
+                  AvatarBrick.network(
                     radius: 12,
-                    image: Image.network(
-                      "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
-                      fit: BoxFit.cover,
-                      height: double.maxFinite,
-                      width: double.maxFinite,
-                    ),
+                    src:
+                        "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
                   ),
-                  AvatarBrick(
+                  AvatarBrick.network(
                     radius: 32,
-                    image: Image.network(
-                      "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
-                      fit: BoxFit.cover,
-                      height: double.maxFinite,
-                      width: double.maxFinite,
-                    ),
+                    src:
+                        "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
                   ),
-                  AvatarBrick(
-                    image: Image.network(
-                      "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
-                      fit: BoxFit.cover,
-                      height: double.maxFinite,
-                      width: double.maxFinite,
-                    ),
+                  AvatarBrick.network(
+                    src:
+                        "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
                   ),
-                  AvatarBrick(
+                  AvatarBrick.network(
                     radius: 12,
                     border: Border.all(width: 2, color: Colors.indigo),
-                    image: Image.network(
-                      "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
-                      fit: BoxFit.cover,
-                      height: double.maxFinite,
-                      width: double.maxFinite,
-                    ),
+                    src:
+                        "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
                   ),
-                  AvatarBrick(
+                  AvatarBrick.network(
                     border: Border.all(width: 6, color: Colors.orange),
-                    image: Image.network(
-                      "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
-                      fit: BoxFit.cover,
-                      height: double.maxFinite,
-                      width: double.maxFinite,
-                    ),
+                    src:
+                        "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
                   ),
-                  AvatarBrick(
+                  AvatarBrick.network(
                     radius: 12,
                     boxShadows: const [
                       BoxShadow(
@@ -138,26 +113,18 @@ class DemoPage extends StatelessWidget {
                           blurRadius: 8,
                           offset: Offset(2, 4))
                     ],
-                    image: Image.network(
-                      "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
-                      fit: BoxFit.cover,
-                      height: double.maxFinite,
-                      width: double.maxFinite,
-                    ),
+                    src:
+                        "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
                   ),
-                  AvatarBrick(
+                  AvatarBrick.network(
                     boxShadows: const [
                       BoxShadow(
                           color: Colors.blueAccent,
                           blurRadius: 4,
                           spreadRadius: 2)
                     ],
-                    image: Image.network(
-                      "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
-                      fit: BoxFit.cover,
-                      height: double.maxFinite,
-                      width: double.maxFinite,
-                    ),
+                    src:
+                        "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
                   ),
                   const AvatarBrick(
                     name: "Avatar Brick",

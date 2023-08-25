@@ -1,6 +1,6 @@
 name: avatar_brick
 description: Avatar Brick is a custom avatar can automatically display your abbreviation name when no avatar is available.
-version: 0.1.3
+version: 0.1.4
 homepage: https://github.com/congson99/avatar_brick
 repository: https://github.com/congson99/avatar_brick
 documentation: https://github.com/congson99/avatar_brick
