@@ -3,7 +3,7 @@
 Avatar Brick is a custom avatar can **automatically display your abbreviation name** when no avatar
 is available.
 
-<a href="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_pub.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_pub.png?raw=true" alt="Icon"></a>
+<a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_pub.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_pub.png?raw=true" alt="Icon"></a>
 <br />
 
 # Let's get started
@@ -16,7 +16,7 @@ import 'package:avatar_brick/avatar_brick.dart';
 
 ### 1. Avatar with an image
 
-<a href="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_image.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_image.png?raw=true" alt="Icon" height="120"></a>
+<a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_image.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_image.png?raw=true" alt="Icon" height="120"></a>
 
 Try the following simple example:
 
@@ -40,7 +40,7 @@ of `double.maxFinite`.
 
 ### 2. Avatar with a "name"
 
-<a href="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_name.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_name.png?raw=true" alt="Icon" height="120"></a>
+<a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_name.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_name.png?raw=true" alt="Icon" height="120"></a>
 
 If you want to create an avatar can **automatically display your abbreviation name**. DON'T pass
 `image` variable or pass `null` value. Then pass your name in the `name` variable like following
@@ -58,7 +58,7 @@ Widget nameAvatarBrick() =>
 
 ### 3. Loading Avatar
 
-<a href="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_loading.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_loading.png?raw=true" alt="Icon" height="120"></a>
+<a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_loading.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_loading.png?raw=true" alt="Icon" height="120"></a>
 
 If you want to create a loading avatar.DON'T pass any variable or pass the `true` value to
 the `isLoading` variable like the following example:
@@ -75,7 +75,7 @@ Widget nullAvatarBrick() => AvatarBrick();
 
 ### Customize the avatar size
 
-<a href="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_size.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_size.png?raw=true" alt="Icon"></a>
+<a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_size.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_size.png?raw=true" alt="Icon"></a>
 
 You can customize the size of the avatar by passing the variable `size`. Try the following example:
 
@@ -96,7 +96,7 @@ Widget resizeAvatarBrick() =>
 
 ### Customize colors for avatars without images
 
-<a href="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_color.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_color.png?raw=true" alt="Icon" height="120"></a>
+<a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_color.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_color.png?raw=true" alt="Icon" height="120"></a>
 
 You can customize the color of the background, border, abbreviation name. Try the following example:
 
@@ -114,7 +114,7 @@ Widget colorAvatarBrick() =>
 
 ### Customize others
 
-<a href="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_others.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_others.png?raw=true" alt="Icon"></a>
+<a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_others.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_others.png?raw=true" alt="Icon"></a>
 
 You can customize the radius, border, shadow,... of the image. Try the following example:
 
