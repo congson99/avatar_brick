@@ -4,7 +4,8 @@ Avatar Brick is a custom avatar can **automatically display your abbreviation na
 is available.
 
 <a href="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_pub.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/son/release1.0.0/assets/screenshots/example_pub.png?raw=true" alt="Icon"></a>
-\\ \\ \\
+<br />
+<br />
 
 # Let's get started
 
