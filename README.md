@@ -91,7 +91,7 @@ You can customize the color of the background, border, abbreviation name. Try th
 ```dart
 Widget colorAvatarBrick() =>
     AvatarBrick(
-      name: "Avatar Brick",
+      name: "Jennie Garth",
       backgroundColor: Colors.white,
       nameTextColor: Colors.teal,
       border: Border.all(width: 4, color: Colors.teal),
