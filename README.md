@@ -142,6 +142,8 @@ Widget otherAvatarBrick() =>
 
 # Thank you for using my package!
 
+pub.dev: [https://pub.dev/packages/avatar_brick](https://pub.dev/packages/avatar_brick)
+
 See more of my packages [here](https://github.com/congson99/flutter_bricks)
 
 Contact me: [congson99vn@gmail.com](mailto:congson99vn@gmail.com)
