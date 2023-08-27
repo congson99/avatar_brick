@@ -72,11 +72,7 @@ Widget nameAvatarBrick() =>
 <a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_loading.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_loading.png?raw=true" alt="Icon" height="120"></a>
 
 If you want to create a default avatar. DON'T pass any variable or pass an `Icon` to the `icon`
-variable.
-
-If you want to create a loading avatar. Pass the `true` value to the `isLoading` variable.
-
-Try the following example:
+variable. Try the following example:
 
 ```dart
 Widget nullAvatarBrick() => AvatarBrick();
@@ -90,7 +86,12 @@ Widget defaultAvatarBrick() =>
         color: Colors.white,
       ),
     );
+```
 
+If you want to create a loading avatar. Pass the `true` value to the `isLoading` variable like the
+following example:
+
+```dart
 Widget simpleAvatarBrick() => AvatarBrick(isLoading: true);
 ```
 
