@@ -1,7 +1,7 @@
 name: avatar_brick
 description: Avatar Brick is a custom avatar can automatically display your abbreviation name when no avatar is available.
-version: 0.1.5
-homepage: https://github.com/congson99/avatar_brick
+version: 0.1.6
+homepage: https://github.com/congson99/flutter_bricks
 repository: https://github.com/congson99/avatar_brick
 documentation: https://github.com/congson99/avatar_brick
 
