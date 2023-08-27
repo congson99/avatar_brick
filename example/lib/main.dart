@@ -91,17 +91,13 @@ class DemoPage extends StatelessWidget {
                         "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
                   ),
                   AvatarBrick.network(
+                    border: Border.all(width: 6, color: Colors.orange),
                     src:
                         "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
                   ),
                   AvatarBrick.network(
                     radius: 12,
                     border: Border.all(width: 2, color: Colors.indigo),
-                    src:
-                        "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
-                  ),
-                  AvatarBrick.network(
-                    border: Border.all(width: 6, color: Colors.orange),
                     src:
                         "https://media.istockphoto.com/id/1166423321/photo/portrait-business-woman-asian-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=k4ByeqnhyGUnT4wJm4baVX2mlT46iRSr65i2FwcldAk=",
                   ),
@@ -149,12 +145,17 @@ class DemoPage extends StatelessWidget {
                   ),
                   const AvatarBrick(
                     backgroundColor: Colors.black26,
+                  ),
+                  const AvatarBrick(
+                    backgroundColor: Colors.black26,
                     icon: Icon(
-                      Icons.dangerous,
-                      size: 80,
+                      Icons.person_rounded,
+                      size: 48,
+                      color: Colors.white,
                     ),
                   ),
                   const AvatarBrick(
+                    backgroundColor: Colors.grey,
                     isLoading: true,
                   ),
                 ],

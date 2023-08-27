@@ -1,6 +1,6 @@
 # Avatar Brick
 
-[![pub package](https://img.shields.io/badge/pub.dev-v0.1.5-blue)](https://pub.dev/packages/avatar_brick)
+[//]: # ([![pub package]&#40;https://img.shields.io/badge/pub.dev-v0.1.6-blue&#41;]&#40;https://pub.dev/packages/avatar_brick&#41;)
 
 Avatar Brick is a custom avatar can **automatically display your abbreviation name** when no avatar
 is available.
@@ -67,17 +67,31 @@ Widget nameAvatarBrick() =>
 
 <br />
 
-## 3. Loading Avatar
+## 3. Default Avatar or Loading Avatar
 
 <a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_loading.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_loading.png?raw=true" alt="Icon" height="120"></a>
 
-If you want to create a loading avatar.DON'T pass any variable or pass the `true` value to
-the `isLoading` variable like the following example:
+If you want to create a default avatar. DON'T pass any variable or pass an `Icon` to the `icon`
+variable.
+
+If you want to create a loading avatar. Pass the `true` value to the `isLoading` variable.
+
+Try the following example:
 
 ```dart
-Widget simpleAvatarBrick() => AvatarBrick(isLoading: true);
-
 Widget nullAvatarBrick() => AvatarBrick();
+
+Widget defaultAvatarBrick() =>
+    AvatarBrick(
+      backgroundColor: Colors.black26,
+      icon: Icon(
+        Icons.person_rounded,
+        size: 48,
+        color: Colors.white,
+      ),
+    );
+
+Widget simpleAvatarBrick() => AvatarBrick(isLoading: true);
 ```
 
 <br />
