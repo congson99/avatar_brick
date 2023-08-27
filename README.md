@@ -1,9 +1,9 @@
-pub.dev: [https://pub.dev/packages/avatar_brick](https://pub.dev/packages/avatar_brick)
-
 # Avatar Brick
 
-Avatar Brick is a custom avatar that can **automatically display your abbreviation name** when no
-avatar is available.
+[![pub package](https://img.shields.io/badge/pub.dev-v0.1.5-blue)](https://pub.dev/packages/avatar_brick)
+
+Avatar Brick is a custom avatar can **automatically display your abbreviation name** when no avatar
+is available.
 
 <a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_pub.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_pub.png?raw=true" alt="Icon"></a>
 <br />
