@@ -149,6 +149,10 @@ class DemoPage extends StatelessWidget {
                   ),
                   const AvatarBrick(
                     backgroundColor: Colors.black26,
+                    icon: Icon(
+                      Icons.dangerous,
+                      size: 80,
+                    ),
                   ),
                   const AvatarBrick(
                     isLoading: true,

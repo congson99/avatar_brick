@@ -2,8 +2,8 @@ pub.dev: [https://pub.dev/packages/avatar_brick](https://pub.dev/packages/avatar
 
 # Avatar Brick
 
-Avatar Brick is a custom avatar can **automatically display your abbreviation name** when no avatar
-is available.
+Avatar Brick is a custom avatar that can **automatically display your abbreviation name** when no
+avatar is available.
 
 <a href="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_pub.png?raw=true"><img src="https://github.com/congson99/avatar_brick/blob/master/assets/screenshots/example_pub.png?raw=true" alt="Icon"></a>
 <br />

@@ -1,3 +1,3 @@
 library avatar_brick;
 
-export 'src/base/avatar_brick.dart';
+export 'src/common/avatar_brick.dart';

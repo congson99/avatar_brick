@@ -17,10 +17,6 @@ String convertFullNameToAbbreviation(String? name, int length) {
   return result.toUpperCase();
 }
 
-double calculateTextFontSizeByAvatarSize(Size? avatarSize) {
-  return getMinSizeByAvatarSize(avatarSize) * 0.4;
-}
-
 double getMinSizeByAvatarSize(Size? size) {
   double height = size?.height ?? defaultHeight;
   double width = size?.width ?? defaultWeight;
@@ -35,12 +31,16 @@ double getMaxSizeByAvatarSize(Size? size) {
   return maxAvatarSize;
 }
 
-double calculateBorderRadiusByAvatarSize(double? radius, Size? size) {
+double calculateTextFontSizeByAvatarSize(Size? avatarSize) {
+  return getMinSizeByAvatarSize(avatarSize) * 0.4;
+}
+
+double reCalculateBorderRadiusByAvatarSize(double? radius, Size? size) {
   if (radius == null) return getMaxSizeByAvatarSize(size);
   return radius * 1.12;
 }
 
-Color getContrastColor(Color color) {
+Color getContrastColorByRootColor(Color color) {
   double luminance =
       (0.299 * color.red + 0.587 * color.green + 0.114 * color.blue) / 255;
   if (luminance > 0.5) {
