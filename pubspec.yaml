@@ -6,7 +6,7 @@ repository: https://github.com/congson99/avatar_brick
 documentation: https://github.com/congson99/avatar_brick
 
 environment:
-  sdk: '>=2.19.6'
+  sdk: '>=2.19.6 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
