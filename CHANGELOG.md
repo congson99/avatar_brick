@@ -1,3 +1,1 @@
-## 0.x.x
-
-* Development releases.
+## 1.0.0
