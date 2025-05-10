@@ -1,9 +1,9 @@
 import 'dart:io';
-import 'dart:typed_data';
 
 import 'package:avatar_brick/src/base/base_avatar_brick.dart';
 import 'package:avatar_brick/src/base/constant.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 
 class AvatarBrick extends BaseAvatarBrick {
   const AvatarBrick({
@@ -71,6 +71,21 @@ class AvatarBrick extends BaseAvatarBrick {
             scale: scale ?? 1,
             fit: fit ?? BoxFit.cover,
             alignment: alignment ?? Alignment.center,
+            errorBuilder: (context, error, stackTrace) {
+              if (kReleaseMode) return const SizedBox.shrink();
+              FlutterError.reportError(FlutterErrorDetails(
+                exception: error,
+                stack: stackTrace,
+                library: 'Image.network',
+                context: ErrorDescription('while loading an image'),
+              ));
+              return ErrorWidget.withDetails(
+                message: 'Failed to load image from $src',
+                error: error is FlutterError
+                    ? error
+                    : FlutterError('Failed to load image: $error'),
+              );
+            },
           )
         : null;
     return BaseAvatarBrick(

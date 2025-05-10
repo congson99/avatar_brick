@@ -1,3 +1,4 @@
-## 0.x.x
+## 1.0.0
 
-* Development releases.
+* Release for latest Dart version
+* Add errorBuilder for Image.network case

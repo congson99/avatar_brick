@@ -1,6 +1,6 @@
 # Avatar Brick
 
-[![pub package](https://img.shields.io/badge/pub.dev-v0.2.0-blue)](https://pub.dev/packages/avatar_brick)
+[![pub package](https://img.shields.io/badge/pub.dev-v1.0.0-blue)](https://pub.dev/packages/avatar_brick)
 
 Avatar Brick is a custom avatar can **automatically display your abbreviation name** when no avatar
 is available.
