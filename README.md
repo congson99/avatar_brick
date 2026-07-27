@@ -151,8 +151,3 @@ Widget otherAvatarBrick() =>
 <br />
 
 # Thank you for using my package!
-
-See more of my packages [here](https://github.com/congson99/flutter_bricks)
-
-Contact me: [congson99vn@gmail.com](mailto:congson99vn@gmail.com)
-| [linkedin](https://www.linkedin.com/in/congson/) | [github](https://github.com/congson99)
