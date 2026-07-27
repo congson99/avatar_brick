@@ -1,3 +1,9 @@
+## 1.0.2
+
+* Rewrite README (features, quick start, API overview, FAQ, best practices)
+* Fix `homepage` URL in pubspec.yaml (was pointing to an unreachable repo)
+* Update pubspec.yaml `description` for pub.dev discoverability
+
 ## 1.0.1
 
 * Fix contrast color calculation for the wide-gamut `Color` API

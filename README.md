@@ -1,6 +1,6 @@
 # Avatar Brick
 
-[![pub package](https://img.shields.io/badge/pub.dev-v1.0.1-blue)](https://pub.dev/packages/avatar_brick)
+[![pub package](https://img.shields.io/badge/pub.dev-v1.0.2-blue)](https://pub.dev/packages/avatar_brick)
 
 **Avatar Brick** is a Flutter avatar widget for building user avatars and profile pictures that
 automatically fall back to initials when no photo is available. It wraps `Image.network`,
@@ -51,7 +51,7 @@ without wrapping `CircleAvatar` in extra widgets yourself.
 
 ```yaml
 dependencies:
-  avatar_brick: ^1.0.1
+  avatar_brick: ^1.0.2
 ```
 
 ```
