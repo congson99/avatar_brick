@@ -1,9 +1,7 @@
-## 1.0.1
+## 1.0.2
 
-* Fix contrast color calculation for the wide-gamut `Color` API
-* Fix `const AvatarBrick(...)` failing to compile on Flutter 3.27+
-* Allow setting `backgroundColor` or `nameTextColor` independently
-* Bump minimum Flutter/Dart SDK to match the `Color` API in use
+* Fix bugs with the loading indicator and colors
+* Improve documentation
 
 ## 1.0.0
 
