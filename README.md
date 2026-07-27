@@ -97,7 +97,7 @@ All constructors accept the same styling parameters: `size`, `radius`, `backgrou
 Use `.network()`, `.asset()`, `.file()`, or `.memory()` for the matching image source:
 
 ```dart
-AvatarBrick.network(src: 'https://i.pravatar.cc/300?img=12');
+AvatarBrick.network(src: 'https://avatars.githubusercontent.com/u/9919');
 AvatarBrick.asset(src: 'assets/images/avatar.png');
 AvatarBrick.file(src: File(user.localAvatarPath));
 AvatarBrick.memory(src: user.avatarBytes);
@@ -109,7 +109,7 @@ You can also pass a pre-built `Image` directly through the base constructor. In 
 ```dart
 AvatarBrick(
   image: Image.network(
-    'https://i.pravatar.cc/300?img=12',
+    'https://avatars.githubusercontent.com/u/9919',
     fit: BoxFit.cover,
     height: double.maxFinite,
     width: double.maxFinite,
@@ -161,7 +161,7 @@ const AvatarBrick(isLoading: true);
 ```dart
 AvatarBrick.network(
   size: const Size(48, 48),
-  src: 'https://i.pravatar.cc/300?img=32',
+  src: 'https://avatars.githubusercontent.com/u/10',
 );
 ```
 
@@ -189,7 +189,7 @@ Omit `radius` for a full circle, or pass a value for a rounded-square avatar. `b
 
 ```dart
 AvatarBrick.network(
-  src: 'https://i.pravatar.cc/300?img=45',
+  src: 'https://avatars.githubusercontent.com/u/20',
   radius: 24,
   border: Border.all(width: 2, color: Colors.orange),
   boxShadows: const [
