@@ -18,11 +18,7 @@ class BaseAvatarBrick extends StatelessWidget {
     required this.nameTextColor,
     required this.maxAbbreviationLength,
     required this.icon,
-  })  : assert(name == null ||
-            ((backgroundColor == null) == (nameTextColor == null))),
-        assert((backgroundColor == null || nameTextColor == null) ||
-            (backgroundColor != nameTextColor)),
-        super(key: key);
+  }) : super(key: key);
 
   /// Style Params
   final Size? size;
@@ -49,6 +45,8 @@ class BaseAvatarBrick extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    assert((backgroundColor == null || nameTextColor == null) ||
+        (backgroundColor != nameTextColor));
     return Container(
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(
@@ -64,7 +62,7 @@ class BaseAvatarBrick extends StatelessWidget {
           child: Container(
             alignment: Alignment.center,
             height: size?.height ?? defaultHeight,
-            width: size?.width ?? defaultWeight,
+            width: size?.width ?? defaultWidth,
             color: (image != null)
                 ? (imageBackgroundColor ?? defaultImageBackgroundColor)
                 : (backgroundColor ?? defaultBackgroundColor),

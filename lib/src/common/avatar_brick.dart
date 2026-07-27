@@ -67,7 +67,7 @@ class AvatarBrick extends BaseAvatarBrick {
                     ? "?${DateTime.now().millisecondsSinceEpoch}"
                     : ""),
             height: size?.height ?? defaultHeight,
-            width: size?.width ?? defaultWeight,
+            width: size?.width ?? defaultWidth,
             scale: scale ?? 1,
             fit: fit ?? BoxFit.cover,
             alignment: alignment ?? Alignment.center,
@@ -127,7 +127,7 @@ class AvatarBrick extends BaseAvatarBrick {
         ? Image.asset(
             src,
             height: size?.height ?? defaultHeight,
-            width: size?.width ?? defaultWeight,
+            width: size?.width ?? defaultWidth,
             scale: scale ?? 1,
             fit: fit ?? BoxFit.cover,
             alignment: alignment ?? Alignment.center,
@@ -172,7 +172,7 @@ class AvatarBrick extends BaseAvatarBrick {
         ? Image.file(
             src,
             height: size?.height ?? defaultHeight,
-            width: size?.width ?? defaultWeight,
+            width: size?.width ?? defaultWidth,
             scale: scale ?? 1,
             fit: fit ?? BoxFit.cover,
             alignment: alignment ?? Alignment.center,
@@ -217,7 +217,7 @@ class AvatarBrick extends BaseAvatarBrick {
         ? Image.memory(
             src,
             height: size?.height ?? defaultHeight,
-            width: size?.width ?? defaultWeight,
+            width: size?.width ?? defaultWidth,
             scale: scale ?? 1,
             fit: fit ?? BoxFit.cover,
             alignment: alignment ?? Alignment.center,

@@ -2,7 +2,7 @@ import 'package:avatar_brick/src/base/helper.dart';
 import 'package:flutter/material.dart';
 
 const double defaultHeight = 80;
-const double defaultWeight = 80;
+const double defaultWidth = 80;
 const Color defaultBackgroundColor = Colors.grey;
 const Color defaultImageBackgroundColor = Colors.white;
 const int defaultAbbreviationLength = 2;

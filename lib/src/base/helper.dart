@@ -19,14 +19,14 @@ String convertFullNameToAbbreviation(String? name, int length) {
 
 double getMinSizeByAvatarSize(Size? size) {
   double height = size?.height ?? defaultHeight;
-  double width = size?.width ?? defaultWeight;
+  double width = size?.width ?? defaultWidth;
   double minAvatarSize = min(height, width);
   return minAvatarSize;
 }
 
 double getMaxSizeByAvatarSize(Size? size) {
   double height = size?.height ?? defaultHeight;
-  double width = size?.width ?? defaultWeight;
+  double width = size?.width ?? defaultWidth;
   double maxAvatarSize = max(height, width);
   return maxAvatarSize;
 }
@@ -41,8 +41,7 @@ double reCalculateBorderRadiusByAvatarSize(double? radius, Size? size) {
 }
 
 Color getContrastColorByRootColor(Color color) {
-  double luminance =
-      (0.299 * color.r + 0.587 * color.g + 0.114 * color.b) / 255;
+  double luminance = 0.299 * color.r + 0.587 * color.g + 0.114 * color.b;
   if (luminance > 0.5) {
     return Color.lerp(Colors.black, Colors.grey, (luminance - 0.5) * 2)!;
   }
