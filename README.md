@@ -58,8 +58,6 @@ dependencies:
 flutter pub get
 ```
 
-Requires Flutter 3.27.0+ / Dart 3.6.0+.
-
 Then import the package:
 
 ```dart
